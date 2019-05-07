@@ -1,6 +1,7 @@
 # Burning Airlines
 
 This is an airlines reservation system project.
+
 ---
 
 ## Wireframe
@@ -19,6 +20,7 @@ A Flight has many Reservations and a Reservation belongs to a Flight.
 The Reservation table is a join table between Users and Flights, which have a many-to-many relationship through Reservations.
 
 The Airplane model has rows and columns to determine the configuration of the plane; the Airplane model has a row and a column for a particular seat.
+
 ---
 
 ## Tools
