@@ -10,7 +10,9 @@
   </head>
 
   <body>
-    <h1>Added by Chris</h1>
+    <% flash.each do |message_type, message| %>
+      <div class="alert alert-<%= message_type %>"><%= message %></div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
