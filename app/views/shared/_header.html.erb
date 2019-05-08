@@ -1,0 +1,21 @@
+<header>
+  <div >
+
+    <% if logged_in? %>
+      <div>
+        <p><%= gravatar_for current_user %> </p>
+        <p><%= current_user.name %></p>
+      </div>
+
+      <div>
+        <p><%= link_to "Log out", logout_path, method: :delete %></p>
+      </div>
+
+    <% else %>
+      <div>
+      <p><%= link_to "Log in", login_path %></p>
+        </div>
+    <% end %>
+
+  </div>
+</header>
